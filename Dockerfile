@@ -17,5 +17,10 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8000
-CMD [ "npm", "start", "--", "--ci" ]
+RUN npm run build
+
+RUN dcl export
+
+
+# EXPOSE 8000
+# CMD [ "npm", "start" ]

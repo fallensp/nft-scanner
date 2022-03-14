@@ -63,7 +63,6 @@ executeTask(async () => {
     userAddress = await EthereumController.getUserAccount()
     log("User Address: ", userAddress)
   } catch (error) {
-    log(error.toString())
   }
 })
 
